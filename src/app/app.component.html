@@ -1,0 +1,11 @@
+<div *ngIf="display == 'show'">
+  <hello name="{{ name }}"></hello>
+  <p>Start editing to see some magic happen :)</p>
+  <button style="background-color:black;color:white" (click)="onToggle()">
+    Save
+  </button>
+</div>
+
+<div *ngIf="display == 'edit'">
+  <app-child1 [item]="currentname"></app-child1>
+</div>
